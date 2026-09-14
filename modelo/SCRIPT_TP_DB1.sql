@@ -39,13 +39,13 @@ CREATE TABLE IF NOT EXISTS estacion_de_trabajo (
 );
 
 CREATE TABLE IF NOT EXISTS proveedor (
-    id_proveedor INT NOT NULL AUTO_INCREMENT,
+    id_proveedor INT NOT NULL ,
     nombre VARCHAR(45) NOT NULL,
     PRIMARY KEY (id_proveedor)
 );
 
 CREATE TABLE IF NOT EXISTS insumo (
-    id_insumo INT NOT NULL AUTO_INCREMENT,
+    id_insumo INT NOT NULL ,
     descripcion VARCHAR(45) NOT NULL,
     PRIMARY KEY (id_insumo)
 );
@@ -77,7 +77,7 @@ CREATE TABLE IF NOT EXISTS insumo_estacion_de_trabajo (
 );
 
 CREATE TABLE IF NOT EXISTS concesionaria (
-    id_concesionaria INT NOT NULL AUTO_INCREMENT,
+    id_concesionaria INT NOT NULL ,
     razon_social VARCHAR(45) NOT NULL,
     nombre VARCHAR(45) NOT NULL,
     PRIMARY KEY (id_concesionaria)
