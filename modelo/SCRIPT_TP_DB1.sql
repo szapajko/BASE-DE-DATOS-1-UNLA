@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS pedido (
 );
 
 CREATE TABLE IF NOT EXISTS detalle_pedido (
-    id_detalle_pedido INT NOT NULL AUTO_INCREMENT,
+    id_detalle_pedido INT NOT NULL,
     id_pedido INT NOT NULL,
     id_modelo INT NOT NULL,
     cantidad INT NOT NULL,
