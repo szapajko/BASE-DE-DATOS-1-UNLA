@@ -114,6 +114,7 @@ CREATE TABLE IF NOT EXISTS vehiculo (
     nro_chasis VARCHAR(7) NOT NULL,
     id_modelo INT NOT NULL,
     id_detalle_pedido INT NULL,
+    fecha_fin DATETIME,
     PRIMARY KEY (nro_chasis),
     CONSTRAINT fk_modelo_vehiculo
         FOREIGN KEY (id_modelo)
