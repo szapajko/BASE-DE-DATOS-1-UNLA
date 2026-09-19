@@ -1,5 +1,7 @@
 use `tp_bd1`;
 
+
+
 DELIMITER //
 
 DROP PROCEDURE IF EXISTS altaDetallePedido //

@@ -1,5 +1,12 @@
 USE `tp_bd1`;
 
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE concesionaria;
+TRUNCATE TABLE pedido;
+TRUNCATE TABLE modelo;
+TRUNCATE TABLE detalle_pedido;
+SET FOREIGN_KEY_CHECKS = 1;
+
 -- CASO 1: ALTA EXITOSA
 CALL altaConcesionaria(@res, @msg, 1,'Auto del Valle S.A.', 'Central Quilmes');
 

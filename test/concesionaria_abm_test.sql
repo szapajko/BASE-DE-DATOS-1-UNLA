@@ -1,6 +1,9 @@
 USE `tp_bd1`;
 
--- PRUEBAS: ABM CONCESIONARIA
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE concesionaria;
+TRUNCATE TABLE pedido;
+SET FOREIGN_KEY_CHECKS = 1;
 
 -- CASO 1: Alta Exitosa
 CALL altaConcesionaria(@res, @msg, 'Auto del Valle S.A.', 'Central Quilmes');

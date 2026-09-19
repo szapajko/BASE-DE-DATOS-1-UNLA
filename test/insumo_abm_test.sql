@@ -1,5 +1,11 @@
 USE `tp_bd1`;
-
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE proveedor;
+TRUNCATE TABLE tarea;
+TRUNCATE TABLE modelo;
+TRUNCATE TABLE linea_de_montaje;
+TRUNCATE TABLE estacion_de_trabajo;
+SET FOREIGN_KEY_CHECKS = 1;
 -- SCRIPT DE PRUEBAS UNITARIAS: ABM INSUMO
 
 -- Aseguramos un proveedor y una estación base para probar dependencias
